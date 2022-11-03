@@ -5,5 +5,5 @@
 provider "google" {
     # Create/Download your credentials from:
     # Google Console -> "APIs & services -> Credentials"
-    credentials = file("agi-project-29-513e0fa00ea3.json")
+    credentials = file("agi-project-29-8d4af8b04373.json")
 }

@@ -37,8 +37,18 @@ The application is a web-based e-commerce app where users can browse items, add 
 
 ## Deployment Instructions
 
-### First Steps (for every Cloud Provider)
+### First Steps
 
+### In Google Cloud Platform
+1) Download the credentials from GCP to the terraform folder
+2) Update the terraform.tfvars and gcp-gke-provider.tf file to match with your GCP project and credential files name
+
+### In another cloud provider
+1) Download the credentials
+2) Update the gcp-gke-cluster.tf file to match the desired cloud provider
+3) Update the terraform.tfvars and gcp-gke-provier.tf file to match with your cloud provider project
+
+### 
 1) Clone or download the repository to your computer
 
 2) Open a Terminal or Shell window in the repository folder
@@ -53,19 +63,12 @@ The application is a web-based e-commerce app where users can browse items, add 
 
 7) Access the terraform folder $cd terraform
 
-8) Now, read the instructions below according to your cloud provider
-
-### In Google Cloud Platform
-
-#### Connect with the project
-1) Download the credentials from GCP to the terraform folder
-2) Update the terraform.tfvars and gcp-gke-provider.tf file to match with your GCP project and credential files name
-3) Deploy with terraform init / terraform plan / terraform apply inside the Vagrant VM
-4) Go to GCP -> Kubernetes Engine -> Services & Ingress page to obtain the IP address of the Boutique
-
-### In another cloud provider
-1) Download the credentials
-2) Update the gcp-gke-cluster.tf file to match the desired cloud provider
-2) Update the terraform.tfvars and gcp-gke-provier.tf file to match with your GCP project
-3) Deploy with terraform init / terraform plan / terraform apply
-4) Check the correct deployment by consulting the front-end endpoint IP
+8) Connect to your project (in Google Cloud use gcloud auth login followed by gcloud config set project <name-of-your-project>
+  
+9) Initialize Terraform $terraform init
+  
+10) Plan the deployment $terraform plan
+  
+11) If no errors are reported apply the changes $terraform apply
+  
+12) If everything went rigth, the application is now deployed (check the ingress IP in the Dashport of your Cloud Provider)! Enjoy our store!

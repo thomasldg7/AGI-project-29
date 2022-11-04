@@ -1,6 +1,6 @@
 # AGISIT Project Team 29 - Online Boutique Store using Terraform and Vagrant
 
-![online-Boutique screenshot]()
+<img width="1436" alt="Captura de ecrã 2022-11-04, às 15 15 30" src="https://user-images.githubusercontent.com/56162588/200010419-fc773aae-b801-498d-8f4e-e9f9eb097827.png">
 
 ## Project and solution Description
 
@@ -39,36 +39,31 @@ The application is a web-based e-commerce app where users can browse items, add 
 
 ### First Steps
 
-### In Google Cloud Platform
-1) Download the credentials from GCP to the terraform folder
-2) Update the terraform.tfvars and gcp-gke-provider.tf file to match with your GCP project and credential files name
-
-### In another cloud provider
-1) Download the credentials
-2) Update the gcp-gke-cluster.tf file to match the desired cloud provider
-3) Update the terraform.tfvars and gcp-gke-provier.tf file to match with your cloud provider project
-
-### 
 1) Clone or download the repository to your computer
 
 2) Open a Terminal or Shell window in the repository folder
 
 3) Install Vagrant
 
-4) Execute the following command $export VAGRANT_VAGRANTFILE="Vagrantfile.vbox"
+### Initial Configurations
 
-5) Bring the VM up with $vagrant up
+#### If you are using Google Cloud Platform
+1) Download the credentials from GCP to the terraform folder
+2) Update the terraform.tfvars and gcp-gke-provider.tf file to match with your GCP project and credential files name
 
-6) Connect with the VM $vagrant ssh mgmt
+#### If your are using another cloud provider
+1) Download the credentials to the terraform folder
+2) Update the gcp-gke-cluster.tf file to match the desired cloud provider
+3) Update the terraform.tfvars and gcp-gke-provier.tf file to match with your cloud provider project
 
-7) Access the terraform folder $cd terraform
+### Terraform Deployment
 
-8) Connect to your project (in Google Cloud use gcloud auth login followed by gcloud config set project <name-of-your-project>
-  
-9) Initialize Terraform $terraform init
-  
-10) Plan the deployment $terraform plan
-  
-11) If no errors are reported apply the changes $terraform apply
-  
-12) If everything went rigth, the application is now deployed (check the ingress IP in the Dashport of your Cloud Provider)! Enjoy our store!
+1) Execute the following command $export VAGRANT_VAGRANTFILE="Vagrantfile.vbox"
+2) Bring the VM up with $vagrant up
+3) Connect with the VM $vagrant ssh mgmt
+4) Access the terraform folder $cd terraform
+5) Connect to your project (in Google Cloud use $gcloud auth login followed by $gcloud config set project <name-of-your-project>
+6) Initialize Terraform $terraform init 
+7) Plan the deployment $terraform plan 
+8) If no errors are reported apply the changes $terraform apply  
+9) If everything went rigth, the application is now deployed (check the ingress IP in the Dashport of your Cloud Provider)! Enjoy our store!

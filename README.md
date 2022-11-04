@@ -12,6 +12,9 @@ We also created the k8s-services.tf to defines the services for each microservic
 
 ## The architecture of the application
 
+<img width="639" alt="Captura de ecrã 2022-11-04, às 15 01 01" src="https://user-images.githubusercontent.com/56162588/200007286-93264a2e-47c3-403c-abf7-cbf135205e6e.png">
+
+
 #### Microservices available to the client
 The application is a web-based e-commerce app where users can browse items, add them to the cart, and purchase them. It includes 10 microservices:
 - adservice
@@ -48,14 +51,16 @@ The application is a web-based e-commerce app where users can browse items, add 
 
 6) Connect with the VM $vagrant ssh mgmt
 
-7) Now, read the instructions below according to your cloud provider
+7) Access the terraform folder $cd terraform
+
+8) Now, read the instructions below according to your cloud provider
 
 ### In Google Cloud Platform
 
 #### Connect with the project
-1) Download the credentials from GCP
-2) Update the terraform.tfvars and gcp-gke-provier.tf file to match with your GCP project
-3) Deploy with terraform init / terraform plan / terraform apply
+1) Download the credentials from GCP to the terraform folder
+2) Update the terraform.tfvars and gcp-gke-provider.tf file to match with your GCP project and credential files name
+3) Deploy with terraform init / terraform plan / terraform apply inside the Vagrant VM
 4) Go to GCP -> Kubernetes Engine -> Services & Ingress page to obtain the IP address of the Boutique
 
 ### In another cloud provider

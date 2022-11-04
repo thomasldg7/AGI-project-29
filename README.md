@@ -67,3 +67,15 @@ The application is a web-based e-commerce app where users can browse items, add 
 7) Plan the deployment $terraform plan 
 8) If no errors are reported apply the changes $terraform apply  
 9) If everything went rigth, the application is now deployed (check the ingress IP in the Dashport of your Cloud Provider)! Enjoy our store!
+
+### Screenshots of the deployment steps
+
+<img width="682" alt="Captura de ecrã 2022-11-04, às 15 16 57" src="https://user-images.githubusercontent.com/56162588/200011435-6f530a03-7cce-4774-a590-1f8af88f0ee1.png">
+<img width="682" alt="Captura de ecrã 2022-11-04, às 15 17 47" src="https://user-images.githubusercontent.com/56162588/200011465-f25674a7-3798-4c2f-9e50-68e213756442.png">
+
+<img width="969" alt="Captura de ecrã 2022-11-04, às 15 18 47" src="https://user-images.githubusercontent.com/56162588/200011586-1f2999d4-8005-4cef-b58a-b8c95853070a.png">
+
+<img width="969" alt="Captura de ecrã 2022-11-04, às 15 19 11" src="https://user-images.githubusercontent.com/56162588/200011543-831c1a8f-4540-45a9-88fe-b864fcefa6e1.png">
+
+<img width="969" alt="Captura de ecrã 2022-11-04, às 15 19 07" src="https://user-images.githubusercontent.com/56162588/200011553-524b229b-306f-464c-93aa-2c0dacf63ed2.png">
+

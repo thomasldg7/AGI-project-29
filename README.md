@@ -45,6 +45,8 @@ The application is a web-based e-commerce app where users can browse items, add 
 
 3) Install Vagrant
 
+4) Create a new project in your Cloud Provider
+
 ### Initial Configurations
 
 #### If you are using Google Cloud Platform

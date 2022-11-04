@@ -71,6 +71,9 @@ The application is a web-based e-commerce app where users can browse items, add 
 ### Screenshots of the deployment steps
 
 <img width="682" alt="Captura de ecrã 2022-11-04, às 15 16 57" src="https://user-images.githubusercontent.com/56162588/200011435-6f530a03-7cce-4774-a590-1f8af88f0ee1.png">
+  
+<img width="527" alt="Captura de ecrã 2022-11-04, às 15 21 56" src="https://user-images.githubusercontent.com/56162588/200011785-80ba60f8-e4a9-4f11-add3-9c80539737d5.png">
+
 <img width="682" alt="Captura de ecrã 2022-11-04, às 15 17 47" src="https://user-images.githubusercontent.com/56162588/200011465-f25674a7-3798-4c2f-9e50-68e213756442.png">
 
 <img width="969" alt="Captura de ecrã 2022-11-04, às 15 18 47" src="https://user-images.githubusercontent.com/56162588/200011586-1f2999d4-8005-4cef-b58a-b8c95853070a.png">
@@ -78,4 +81,13 @@ The application is a web-based e-commerce app where users can browse items, add 
 <img width="969" alt="Captura de ecrã 2022-11-04, às 15 19 11" src="https://user-images.githubusercontent.com/56162588/200011543-831c1a8f-4540-45a9-88fe-b864fcefa6e1.png">
 
 <img width="969" alt="Captura de ecrã 2022-11-04, às 15 19 07" src="https://user-images.githubusercontent.com/56162588/200011553-524b229b-306f-464c-93aa-2c0dacf63ed2.png">
+  
+### Screenshots of the Application
+  
+<img width="1436" alt="Captura de ecrã 2022-11-04, às 15 22 38" src="https://user-images.githubusercontent.com/56162588/200011947-03f6d87f-65d9-41c0-a404-88bdeb685aac.png">
+  
+<img width="1436" alt="Captura de ecrã 2022-11-04, às 15 22 42" src="https://user-images.githubusercontent.com/56162588/200011957-6788c45f-fc1a-420b-ad5b-3ab73bec59c9.png">
+  
+<img width="1436" alt="Captura de ecrã 2022-11-04, às 15 22 45" src="https://user-images.githubusercontent.com/56162588/200011962-29799c50-1c0e-4594-ae66-39a4042ce476.png">
+
 

@@ -2,13 +2,13 @@
 
 ![online-Boutique screenshot]()
 
-## Project Description
+## Project and solution Description
 
 This project was implemented using Vagrant, Terraform and Kubernetes and inspired by the Google Cloud Platform microservices-demo project (https://github.com/GoogleCloudPlatform/microservices-demo)
 
-First, we build the Docker images using the GCP-demo Dockerfile and upload them to a dockerhub.io repository[https://hub.docker.com/r/ricardojss/agisit-team29/tags]. We choose to use Terraform as an Infrastructure-as-Code tool to deploy our Kubernetes cluster to a cloud provider.
+First, we build the Docker images using the GCP-demo Dockerfiles for the different microservices and upload them to a dockerhub.io repository[https://hub.docker.com/r/ricardojss/agisit-team29/tags]. We choose to use Terraform as an Infrastructure-as-Code tool to deploy our Kubernetes cluster to a cloud provider.
 To do so, we created several Terraform files including the k8s-pods.tf that describes the Kubernetes pods that are used the Dockerimages to specify the microservices. It also includes information about the ports, the environments variables and the number of replicas (we choose 3).
-We also created the k8s-services.tf to defines the services for each microservices and the gcp-gke-cluster.tf file to define the cluster where the Kubernetes cluster will be deployed (GCP). In order to facilitate the installation, we provide a Vagrant VM with all the necessary packages already installed.
+We also created the k8s-services.tf to defines the services for each microservices and the gcp-gke-cluster.tf file to define the cluster where the Kubernetes cluster will be deployed (GCP). In order to facilitate the installation, we provide a Vagrant VM with all the necessary packages already installed. Additionally, monitoring tools were also introduced (Grafana and Prometheus) to allow real time monitoring of the cluster. Finally, we have made the application with high availability by replicating the pods (3 replicas for each pode, execept the redis-leader) and also introduced persistent storage by introducing a redis-leader and redis-follower pods.
 
 ## The architecture of the application
 
